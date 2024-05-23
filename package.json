@@ -1,0 +1,19 @@
+{
+  "name": "web-flashcards-challenge",
+  "version": "1.0.0",
+  "description": "Мы собираемся создать веб-приложение для флэш-карт. Наше приложение предоставит пользователям возможность использования флэш-карты. \r Пользователь выберет колоду и сыграет партию с флэш-картами.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/compat": "^1.0.1",
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.3.0",
+    "typescript-eslint": "^7.10.0"
+  }
+}
