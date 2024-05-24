@@ -7,7 +7,7 @@ function Topic({title, img, id}) {
         <div className='border border-4 rounded'>
             <img src={img} alt="" width='320px' height='280px' className='rounded m-2' />
             
-            <Link to={`/questions/${id}`}>
+            <Link to={`/questions/1`}>
                 <h1 className='p-4'>{title}</h1>
             </Link>
 
