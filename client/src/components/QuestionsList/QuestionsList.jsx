@@ -10,6 +10,7 @@ export default function QuestionsList() {
   // console.log(count);
   async function loadQuestions() {
     const response = await fetch(`/api/question/${id}`);
+    setRightAnswer('')
     console.log(response)
     const data = await response.json();
     setQuestion(data);
@@ -28,7 +29,8 @@ export default function QuestionsList() {
       setRightAnswer('Wow!!!')
       console.log('Wow!!!')
     } else {
-      setRightAnswer(`No!! Правильный ответ: ${question.answer}`)
+      setRightAnswer(`No!!
+      Правильный ответ: ${question.answer}`)
       console.log('No!!')
     }
   }
@@ -36,9 +38,9 @@ export default function QuestionsList() {
   return (
     <div className="d-flex justify-content-center mt-5">
       {/* <h1>Вопросики</h1> */}
-      <div className='border border-4 rounded'>
-        <img src={question.img} alt="" width='1000px' height='600px' className='rounded m-2' />
-        <p className="fs-1 fw-bold">{question.question}</p>
+      <div className="card rounded m-2" style={{width: '68rem', padding: '2rem'}}>
+        <img src={question.img} alt="" width='1000px' height='600px' className='card-img-top' />
+        <p className="card-text" style={{fontSize: '2rem', fontWeight: 600}}>{question.question}</p>
         {/* <p>Введите Ваш ответ</p> */}
         <div className='input-group mb-3'>
           <input placeholder='Введите Ваш ответ' className='form-control fw-semibold' type="text" value={answer} onChange={(e)=> SetAnswer(e.target.value)}/>
