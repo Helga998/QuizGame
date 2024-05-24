@@ -9,6 +9,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      img: {
+        allowNull: false,
+        type: Sequelize.TEXT
+      },
       question: {
         allowNull: false,
         type: Sequelize.TEXT
