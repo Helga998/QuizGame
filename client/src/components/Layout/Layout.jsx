@@ -4,7 +4,7 @@ import React from 'react';
 function Layout({children}) {
     return (
         <>
-        <div className='container'>{children}</div>
+        <div className='container p-3 mb-2'>{children} </div>
         </>
     );
 }
