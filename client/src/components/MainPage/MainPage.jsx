@@ -23,7 +23,8 @@ function MainPage() {
     return (
         <>
         <Layout>
-            <h2>Choose your destiny</h2>
+          {/* <div></div> */}
+            <h2 className="d-flex justify-content-center fs-1">Quiz</h2>
             <div  className="d-flex flex-row mb-3 justify-content-evenly">
               { topic.length>1 && 
 <>
@@ -37,7 +38,7 @@ function MainPage() {
         <div className='border border-4 rounded'>
         <img src={topic[1].img} alt="" width='320px' height='280px' className='rounded m-2' />
         
-        <Link to={`/questions/5`}>
+        <Link to={`/questions/8`}>
             <h1 className='p-4'>{topic[1].title}</h1>
         </Link>
     </div>
