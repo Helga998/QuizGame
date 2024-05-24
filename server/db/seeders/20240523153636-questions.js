@@ -47,7 +47,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          img: '/img/пикель.jpg',
+          img: '/img/пиксель.jpg',
           question: 'разрешение экрана в ...',
           answer: 'пиксель',
           topic_id: 1,
