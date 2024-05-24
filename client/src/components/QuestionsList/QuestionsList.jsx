@@ -32,17 +32,23 @@ export default function QuestionsList() {
       console.log('No!!')
     }
   }
+  console.log(id);
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <h1>Вопросики</h1>
       <div>
-        <img src={question.img} alt="" />
+        <img src={question.img} alt="" width='500px' height='280px' className='rounded m-2' />
         <p>{question.question}</p>
         <p>Введите Ваш ответ</p>
-        <input type="text" value={answer} onChange={(e)=> SetAnswer(e.target.value )}/>
+        <input type="text" value={answer} onChange={(e)=> SetAnswer(e.target.value)}/>
         <button type='button' onClick={checkAnswer}>OK</button>
         <div>{rightAnswer}</div>
-        <Link to={`/questions/${+id + 1}`}>Next</Link>
+        { id == 7 ?
+           <Link to='/'>Главное меню</Link>
+          : <Link to={`/questions/${+id + 1}`}>Next</Link>
+
+        }
+
       </div>
       
     </div>
