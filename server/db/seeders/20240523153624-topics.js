@@ -7,14 +7,14 @@ module.exports = {
     'Topics',
     [
       {
-        title: 'Dogs',
-        img: 'https://w.forfun.com/fetch/12/1239738c501e807ff53564553aebe781.jpeg',
+        title: 'техвопрос',
+        img: 'https://u.9111s.ru/uploads/202201/27/d73333598a114f9c95425f05f785a841.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        title: 'Cats',
-        img: 'https://w.forfun.com/fetch/db/dbb74713dd87469436e28714a45b0b39.jpeg',
+        title: 'из жизни студента',
+        img: 'http://www.webquestcreator2.com/majwq/files/files_user/80443/Preguntas.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
